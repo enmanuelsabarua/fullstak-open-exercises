@@ -1,0 +1,38 @@
+.navBar {
+    background-color: rgb(196, 196, 196);
+    padding: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.navBar a:hover {
+    color: white;
+}
+
+.user-info {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.user-info button {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(255, 97, 97);
+}
+
+.user-info button:hover {
+    cursor: pointer;
+    background-color: red;
+}

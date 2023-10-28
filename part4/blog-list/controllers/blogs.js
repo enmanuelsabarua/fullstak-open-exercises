@@ -3,12 +3,11 @@ const Blog = require('../models/blog');
 const middleware = require('../utils/middleware');
 
 blogRouter.get('/', async (req, res) => {
-    const blogs = await Blog.find({}).populate('user', { username: 1, name: 1 });
+    const blogs = await Blog.find({}).populate('user', { username: 1, name: 1 }).populate('comments');
     res.json(blogs);
 });
 
 blogRouter.post('/', middleware.userExtractor, async (req, res) => {
-    console.log('creating');
     const body = req.body;
 
     const user = req.user;

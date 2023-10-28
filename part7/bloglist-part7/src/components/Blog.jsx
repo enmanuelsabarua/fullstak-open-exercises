@@ -18,6 +18,7 @@ const Blog = ({ blog, likeBlog, user, removeBlog }) => {
     }
   }
 
+
   return (
     <div className="blog" style={blogStyle}>
       {blog.title}

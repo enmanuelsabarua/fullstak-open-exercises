@@ -1,0 +1,17 @@
+.toggle-btn button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.toggle-btn button:hover {
+    cursor: pointer;
+}
+
+.cancel-toggle {
+    margin-bottom: 10px;
+}
